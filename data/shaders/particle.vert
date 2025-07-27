@@ -5,13 +5,13 @@ layout (location = 1) in vec3 aColor;
 uniform mat4 model;
 uniform mat4 view;
 uniform mat4 projection;
-uniform float pointSize; // Tamaño del punto en píxeles
+uniform float pointSize;
 
-out vec3 particleColor;
+out vec3 ParticleColor;
 
 void main()
 {
     gl_Position = projection * view * model * vec4(aPos, 1.0);
-    gl_PointSize = pointSize; // Establece el tamaño del punto en píxeles
-    particleColor = aColor;
+    gl_PointSize = pointSize;
+    ParticleColor = aColor;
 }

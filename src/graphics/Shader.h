@@ -6,25 +6,18 @@
 #include <iostream>
 
 #include <glad/glad.h>
-#include <glm/glm.hpp> // Para matrices y vectores GLM
-#include <glm/gtc/type_ptr.hpp> // Para glm::value_ptr
+#include <glm/glm.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 class Shader {
 public:
-    unsigned int ID; // El ID del programa de shader OpenGL
+    unsigned int ID;
 
-    // Constructor
-    // TODO: Carga y compila los shaders desde los archivos de ruta
     Shader();
-
-    // Método para cargar y compilar los shaders
-    // Retorna true si la compilación fue exitosa, false en caso contrario
     bool load(const char* vertexPath, const char* fragmentPath, const char* geometryPath = nullptr);
-
-    // Usar el programa de shader
     void use();
 
-    // Métodos uniformes (setters para pasar datos a los shaders)
+    // setters for uniform variables, typlically used in shaders
     void setBool(const std::string& name, bool value) const;
     void setInt(const std::string& name, int value) const;
     void setFloat(const std::string& name, float value) const;
@@ -39,6 +32,6 @@ public:
     void setMat4(const std::string& name, const glm::mat4& mat) const;
 
 private:
-    // Método privado para comprobar errores de compilación/enlazado
+    // debugging shader compilation errors
     void checkCompileErrors(unsigned int shader, std::string type);
 };

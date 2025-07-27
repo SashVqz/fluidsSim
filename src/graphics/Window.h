@@ -18,10 +18,7 @@ public:
     int getHeight() const;
     void setFramebufferSizeCallback(GLFWframebuffersizefun callback);
 
-    // Get the underlying GLFWwindow pointer
     GLFWwindow* getGlfwWindow() const { return glfwWindow; }
-
-    // Check if a key is pressed (wraps glfwGetKey)
     bool isKeyPressed(int key) const;
 
 private:

@@ -3,13 +3,13 @@ out vec4 FragColor;
 
 in vec3 FragPos;
 in vec3 Normal;
-// in vec2 TexCoords; // Ya no se recibe si no se envía desde el vertex shader
-in vec3 OutColor; // Recibe el color desde el vertex shader
+// in vec2 TexCoords; 
+in vec3 OutColor; 
 
 uniform vec3 lightPos;
 uniform vec3 viewPos;
 uniform vec3 lightColor;
-// uniform sampler2D texture_diffuse1; // Descomentar si usas texturas
+// uniform sampler2D texture_diffuse1;
 
 void main()
 {
@@ -30,9 +30,7 @@ void main()
     float spec = pow(max(dot(viewDir, reflectDir), 0.0), 32);
     vec3 specular = specularStrength * spec * lightColor;
 
-    // Combina todos los componentes con el color del objeto
-    vec3 finalColor = (ambient + diffuse + specular) * OutColor; // Usa el OutColor del vertex shader
-    // Si tuvieras textura_diffuse1:
+    vec3 finalColor = (ambient + diffuse + specular) * OutColor; 
     // vec3 finalColor = (ambient + diffuse + specular) * vec3(texture(texture_diffuse1, TexCoords));
 
     FragColor = vec4(finalColor, 1.0);
