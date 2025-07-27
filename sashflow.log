@@ -119,3 +119,45 @@ Logger Initialized at 2025-07-27 17:29:45
 2025-07-27 17:30:17 [INFO] Mesh destroyed. VAO, VBO, EBO deleted.
 2025-07-27 17:30:17 [INFO] Window 'SashFlow Fluid Simulation' destroyed.
 Logger Shutting Down at 2025-07-27 17:30:17
+Logger Initialized at 2025-07-27 17:47:53
+2025-07-27 17:47:53 [INFO] Starting SashFlow application...
+2025-07-27 17:47:53 [INFO] Initializing GLFW...
+2025-07-27 17:47:53 [INFO] Window 'SashFlow Fluid Simulation' created (1280x720).
+2025-07-27 17:47:53 [INFO] Loading GLAD...
+2025-07-27 17:47:53 [INFO] Initializing shaders...
+2025-07-27 17:47:53 [INFO] Shader object created with ID: 0
+2025-07-27 17:47:53 [INFO] Shaders loaded and compiled successfully: data/shaders/basic.vert, data/shaders/basic.frag
+2025-07-27 17:47:53 [INFO] Shader object created with ID: 0
+2025-07-27 17:47:53 [INFO] Shaders loaded and compiled successfully: data/shaders/particle.vert, data/shaders/particle.frag
+2025-07-27 17:47:53 [INFO] Initializing camera...
+2025-07-27 17:47:53 [INFO] Creating container mesh with Vertex struct
+2025-07-27 17:47:53 [INFO] Mesh created with 8 vertices and 36 indices.
+2025-07-27 17:47:53 [INFO] Initializing SPH fluid simulator...
+2025-07-27 17:47:53 [INFO] SPH Fluid Model created with 1000 particles
+2025-07-27 17:47:53 [INFO] SPH Simulation Parameters:
+2025-07-27 17:47:53 [INFO] Particles: 1000
+2025-07-27 17:47:53 [INFO] Particle mass: 0.020000 kg
+2025-07-27 17:47:53 [INFO] Rest density: 1000.000000 kg/m³
+2025-07-27 17:47:53 [INFO] Gas constant: 3000.000000
+2025-07-27 17:47:53 [INFO] Viscosity: 3.500000
+2025-07-27 17:47:53 [INFO] Smoothing radius: 0.045700 m
+2025-07-27 17:47:53 [INFO] Time step: 0.000800 s
+2025-07-27 17:47:53 [INFO] Particle spacing: 0.027144 m
+2025-07-27 17:47:53 [INFO] Simulation box: 2.000000 x 2.000000 x 2.000000 m
+2025-07-27 17:47:53 [INFO] CUDA Kernels: ENABLED
+2025-07-27 17:47:53 [INFO] Initializing SPH Fluid Model with CUDA kernels
+2025-07-27 17:47:53 [INFO] Initializing particle positions...
+2025-07-27 17:47:53 [INFO] Initialized 1000 particles
+2025-07-27 17:47:53 [INFO] Initializing CUDA buffers
+2025-07-27 17:47:53 [INFO] CUDA buffers initialized successfully
+2025-07-27 17:47:53 [INFO] GPU memory allocated: 0 MB
+2025-07-27 17:47:53 [INFO] Setting up CUDA constants...
+2025-07-27 17:47:53 [INFO] SPH Fluid Model with CUDA kernels initialized successfully
+2025-07-27 17:47:53 [INFO] Setting up particle VAO/VBO...
+2025-07-27 17:47:53 [INFO] Application initialization complete.
+2025-07-27 17:48:08 [INFO] SashFlow application finished. Shutting down.
+2025-07-27 17:48:08 [INFO] Application destructor called. Cleaning up OpenGL resources and GLFW.
+2025-07-27 17:48:08 [INFO] SPH Fluid Model shutdown complete
+2025-07-27 17:48:08 [INFO] Mesh destroyed. VAO, VBO, EBO deleted.
+2025-07-27 17:48:08 [INFO] Window 'SashFlow Fluid Simulation' destroyed.
+Logger Shutting Down at 2025-07-27 17:48:08
